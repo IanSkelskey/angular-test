@@ -1,4 +1,6 @@
-# AngularTest
+# Bibliomation Angular Test
+
+![Bibliomation Logo](./public/assets/logo.svg)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0.
 
