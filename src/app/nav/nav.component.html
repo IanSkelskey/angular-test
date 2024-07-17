@@ -1,12 +1,17 @@
-<nav class="navbar">
-    <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Why Bibliomation?</a></li>
-        <li><a href="#">About Bibliomation</a></li>
-        <li><a href="#">Evergreen</a></li>
-        <li><a href="#">Members Site</a></li>
-        <li><a href="#">findIT CT</a></li>
-        <li><a href="#">Connecticut Digital Archive (CTDA)</a></li>
-        <li><a href="#">Delivery Form</a></li>
-    </ul>
-</nav>
+<mat-toolbar color="primary">
+    <span>Bibliomation</span>
+    <span class="spacer"></span>
+    <mat-icon>search</mat-icon>
+    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Home</button>
+      <button mat-menu-item>Why Bibliomation?</button>
+      <button mat-menu-item>About Bibliomation</button>
+      <button mat-menu-item>Evergreen</button>
+      <button mat-menu-item>Members Site</button>
+      <button mat-menu-item>findIT CT</button>
+      <button mat-menu-item>Connecticut Digital Archive (CTDA)</button>
+      <button mat-menu-item>Delivery Form</button>
+    </mat-menu>
+  </mat-toolbar>
+  

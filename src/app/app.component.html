@@ -1,16 +1,56 @@
 <!-- src/app/app.component.html -->
 
-<main class="main">
-  <div>
-    <img src="assets/logo.svg" alt="Bibliomation Logo" class="biblio-logo" />
-    <app-nav></app-nav>
-    <h1>Welcome</h1>
-    <p>
-      Bibliomation is Connecticut’s largest library consortium. Sixty-eight public libraries, three special, and 10
-      schools share an Evergreen system with centralized cataloging and a shared computer network. Bibliomation is
-      Connecticut’s only open source consortium.
-    </p>
-  </div>
+<!-- Header Component -->
+<header>
+  <mat-toolbar color="primary">
+    <span>Bibliomation</span>
+    <span class="spacer"></span>
+    <mat-icon>search</mat-icon>
+    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>About Us</button>
+      <button mat-menu-item>Services</button>
+      <button mat-menu-item>Contact</button>
+    </mat-menu>
+  </mat-toolbar>
+</header>
+
+<!-- Main Content Component -->
+<main>
+  <section class="hero">
+    <h1>Welcome to Bibliomation</h1>
+    <p>Connecticut’s largest library consortium.</p>
+    <button mat-raised-button color="accent">Learn More</button>
+  </section>
+
+  <section class="services">
+    <mat-card>
+      <mat-card-title>Our Services</mat-card-title>
+      <mat-card-content>
+        <p>Top-notch cataloging, expert IT support, and more.</p>
+      </mat-card-content>
+    </mat-card>
+    <mat-card>
+      <mat-card-title>OverDrive</mat-card-title>
+      <mat-card-content>
+        <p>Access eBooks and eAudiobooks 24/7.</p>
+      </mat-card-content>
+    </mat-card>
+  </section>
 </main>
+
+<!-- Footer Component -->
+<footer>
+  <div class="contact-info">
+    <p>24 Wooster Ave, Waterbury, CT 06708</p>
+    <p>Phone: 203-577-4070</p>
+    <p>{{"Email: info@bibliomation.org"}}</p>
+  </div>
+  <div class="social-media">
+    <a href="https://www.facebook.com/bibliomation"><mat-icon>facebook</mat-icon></a>
+    <a href="https://twitter.com/bibliomation"><mat-icon>twitter</mat-icon></a>
+  </div>
+</footer>
+
 
 <router-outlet></router-outlet>
