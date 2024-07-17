@@ -3,8 +3,6 @@
 .navbar {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: #004080;
 }
 
@@ -13,8 +11,10 @@
 }
 
 .nav-links {
+    width: 100%;
     list-style: none;
     display: flex;
+    justify-content: space-around;
     gap: 1.5rem;
 }
 
