@@ -4,14 +4,14 @@
 
 :host {
     font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-      "Segoe UI Symbol";
+        Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Symbol";
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
+}
 
-  main {
+main {
     width: 100%;
     min-height: 100%;
     display: flex;
@@ -20,8 +20,8 @@
     padding: 1rem;
     box-sizing: inherit;
     position: relative;
-  }
+}
 
-  .biblio-logo {
-    max-width: 9.2rem;
-  }
+.biblio-logo {
+    max-width: 10rem;
+}
