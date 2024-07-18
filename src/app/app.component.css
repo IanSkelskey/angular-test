@@ -10,10 +10,12 @@
     padding: 2rem;
 }
 
-body {
-    display: flex;
-}
-
 mat-card {
     width: 45%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
 }
