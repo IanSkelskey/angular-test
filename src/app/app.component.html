@@ -1,27 +1,16 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport
-      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-      [mode]="(isHandset$ | async) ? 'over' : 'side'"
-      [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>Menu</mat-toolbar>
-    <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
-    </mat-nav-list>
+  <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
+    <app-nav></app-nav> <!-- Include the NavComponent here -->
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
-      <button
-        type="button"
-        aria-label="Toggle sidenav"
-        mat-icon-button
-        (click)="drawer.toggle()">
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
       <span>Bibliomation</span>
     </mat-toolbar>
-    
+
     <!-- Main Content Component -->
     <main>
       <section class="hero">
@@ -31,8 +20,9 @@
       </section>
 
       <section class="services">
+        <h2>Services</h2>
         <mat-card>
-          <mat-card-title>Our Services</mat-card-title>
+          <mat-card-title>Biblio Tech</mat-card-title>
           <mat-card-content>
             <p>Top-notch cataloging, expert IT support, and more.</p>
           </mat-card-content>
@@ -51,7 +41,7 @@
       <div class="contact-info">
         <p>24 Wooster Ave, Waterbury, CT 06708</p>
         <p>Phone: 203-577-4070</p>
-        <p>{{"Email: info@bibliomation.org"}}</p>
+        <p>{{"Email: info&#64;bibliomation.org"}}</p>
       </div>
       <div class="social-media">
         <a href="https://www.facebook.com/bibliomation"><mat-icon>facebook</mat-icon></a>

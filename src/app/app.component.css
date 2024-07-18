@@ -10,12 +10,9 @@
 
 .services {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 1rem;
     padding: 2rem;
-}
-
-mat-card {
-    width: 45%;
 }
 
 .main {
