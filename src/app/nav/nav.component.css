@@ -1,33 +1,17 @@
-/* src/app/nav/nav.component.css */
-
-.navbar {
-    width: 100%;
-    display: flex;
-    background-color: #004080;
+.sidenav-container {
+  height: 100%;
 }
 
-.navbar .logo img {
-    max-height: 50px;
+.sidenav {
+  width: 200px;
 }
 
-.nav-links {
-    width: 100%;
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    gap: 1.5rem;
+.sidenav .mat-toolbar {
+  background: inherit;
 }
 
-.nav-links li {
-    display: inline;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
-}
-
-.nav-links a:hover {
-    text-decoration: underline;
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
