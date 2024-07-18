@@ -6,21 +6,21 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
-import { NavComponent } from './nav/nav.component';
+import { NavComponent } from "./nav/nav.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
     RouterOutlet,
-    NavComponent,
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
     MatMenuModule,
     MatCardModule,
-    MatInputModule
-  ],
+    MatInputModule,
+    NavComponent
+],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

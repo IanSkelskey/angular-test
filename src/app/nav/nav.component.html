@@ -1,17 +1,28 @@
-<mat-toolbar color="primary">
-    <span>Bibliomation</span>
-    <span class="spacer"></span>
-    <mat-icon>search</mat-icon>
-    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item>Home</button>
-      <button mat-menu-item>Why Bibliomation?</button>
-      <button mat-menu-item>About Bibliomation</button>
-      <button mat-menu-item>Evergreen</button>
-      <button mat-menu-item>Members Site</button>
-      <button mat-menu-item>findIT CT</button>
-      <button mat-menu-item>Connecticut Digital Archive (CTDA)</button>
-      <button mat-menu-item>Delivery Form</button>
-    </mat-menu>
-  </mat-toolbar>
-  
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item href="#">Link 1</a>
+      <a mat-list-item href="#">Link 2</a>
+      <a mat-list-item href="#">Link 3</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      @if (isHandset$ | async) {
+        <button
+          type="button"
+          aria-label="Toggle sidenav"
+          mat-icon-button
+          (click)="drawer.toggle()">
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+      }
+      <span>angular-test</span>
+    </mat-toolbar>
+    <!-- Add Content Here -->
+  </mat-sidenav-content>
+</mat-sidenav-container>
