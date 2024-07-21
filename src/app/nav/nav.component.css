@@ -34,3 +34,9 @@
 mat-nav-list {
   flex-grow: 1;
 }
+
+mat-nav-list a {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}

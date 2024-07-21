@@ -12,6 +12,9 @@ import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSidenav, MatSidenavContainer, MatSidenavContent } from '@angular/material/sidenav';
 import { MatNavList } from '@angular/material/list';
+import { MatCardTitle, MatCardTitleGroup, MatCardLgImage, MatCardHeader } from '@angular/material/card';
+
+
 @NgModule({
   imports: [
     FontAwesomeModule,
@@ -26,7 +29,11 @@ import { MatNavList } from '@angular/material/list';
     MatSidenav,
     MatSidenavContainer,
     MatSidenavContent,
-    MatNavList
+    MatNavList,
+    MatCardTitle,
+    MatCardTitleGroup,
+    MatCardLgImage,
+    MatCardHeader
   ],
   exports: [
     FontAwesomeModule,

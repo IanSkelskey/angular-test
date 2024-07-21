@@ -18,19 +18,32 @@
         <p>Connecticut’s largest library consortium.</p>
         <button mat-raised-button color="accent">Learn More</button>
       </section>
-
       <section class="services">
-        <h2>Services</h2>
-        <mat-card>
-          <mat-card-title>Biblio Tech</mat-card-title>
+        <mat-card class="service-item">
+          <mat-card-header>
+            <mat-card-title><fa-icon [icon]="faBook"></fa-icon> Cataloging</mat-card-title>
+          </mat-card-header>
           <mat-card-content>
-            <p>Top-notch cataloging, expert IT support, and more.</p>
+            <img src="assets/catalog.png" alt="An old card catalog" />
+            <p>Our cataloging services are designed to help libraries of all sizes.</p>
           </mat-card-content>
         </mat-card>
-        <mat-card>
-          <mat-card-title>OverDrive</mat-card-title>
+        <mat-card class="service-item">
+          <mat-card-header>
+            <mat-card-title><mat-icon>support_agent</mat-icon> Support</mat-card-title>
+          </mat-card-header>
           <mat-card-content>
-            <p>Access eBooks and eAudiobooks 24/7.</p>
+            <img src="assets/support.png" alt="Laptop with code on screen" />
+            <p>Our support team is here to help you with any questions or issues you may have.</p>
+          </mat-card-content>
+        </mat-card>
+        <mat-card class="service-item">
+          <mat-card-header>
+            <mat-card-title><fa-icon [icon]="faCogs"></fa-icon> Resources</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <img src="assets/ebook.png" alt="A kindle on a table with coffee and a phone" />
+            <p>Our resources are designed to help you find the information you need.</p>
           </mat-card-content>
         </mat-card>
       </section>
