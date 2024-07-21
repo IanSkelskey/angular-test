@@ -1,17 +1,21 @@
 import { Component } from '@angular/core';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatListModule } from '@angular/material/list';
-import { MatIcon } from '@angular/material/icon';
+import { MaterialModule } from '../../material.module';
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
+  imports: [
+    MaterialModule
+  ],
   selector: 'app-nav',
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.css',
   standalone: true,
-  imports: [
-    MatToolbarModule,
-    MatListModule,
-    MatIcon
-  ]
 })
-export class NavComponent {}
+export class NavComponent {
+  faFacebook = faFacebook;
+  faLinkedin = faLinkedin;
+  faLocationDot = faLocationDot;
+  faTwitter = faTwitter;
+  constructor() { }
+}

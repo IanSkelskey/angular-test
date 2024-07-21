@@ -1,14 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
-import { MatMenuModule } from '@angular/material/menu';
-import { MatCardModule } from '@angular/material/card';
-import { MatInputModule } from '@angular/material/input';
+import { MaterialModule } from '../material.module';
 import { NavComponent } from "./nav/nav.component";
-import { MatSidenav, MatSidenavContainer, MatSidenavContent } from '@angular/material/sidenav';
-import { MatNavList } from '@angular/material/list';
 import { CommonModule } from '@angular/common';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { map, Observable, shareReplay } from 'rxjs';
@@ -19,16 +12,7 @@ import { map, Observable, shareReplay } from 'rxjs';
   imports: [
     CommonModule,
     RouterOutlet,
-    MatToolbarModule,
-    MatButtonModule,
-    MatIconModule,
-    MatMenuModule,
-    MatCardModule,
-    MatInputModule,
-    MatNavList,
-    MatSidenav,
-    MatSidenavContainer,
-    MatSidenavContent,
+    MaterialModule,
     NavComponent
   ],
   templateUrl: './app.component.html',

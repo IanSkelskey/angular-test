@@ -3,21 +3,21 @@
 </mat-toolbar>
 <mat-nav-list>
   <a mat-list-item href="#">Home</a>
-  <a mat-list-item href="#">Why Bibliomation?</a>
-  <a mat-list-item href="#">About Bibliomation</a>
+  <a mat-list-item href="https://www.biblio.org/services/">Why Bibliomation?</a>
+  <a mat-list-item href="https://www.biblio.org/about/">About Bibliomation</a>
   <a mat-list-item href="#">Evergreen</a>
   <a mat-list-item href="#">findIT CT</a>
   <a mat-list-item href="#">Connecticut Digital Archive (CTDA)</a>
   <a mat-list-item href="#">Delivery Form</a>
 </mat-nav-list>
 <div class="contact">
-  <div class="contact-info">
-    <p>24 Wooster Ave, Waterbury, CT 06708</p>
-    <p>Phone: 203-577-4070</p>
-    <p>{{"Email: info&#64;bibliomation.org"}}</p>
-  </div>
+  <fa-icon [icon]="faLocationDot"></fa-icon>
+  <p>24 Wooster Ave, Waterbury, CT 06708</p>
+  <p>Phone: <a href="tel:203-577-4070">203-577-4070</a></p>
   <div class="social-media">
-    <a href="https://www.facebook.com/bibliomation"><mat-icon>facebook</mat-icon></a>
-    <a href="https://twitter.com/bibliomation"><mat-icon>twitter</mat-icon></a>
+    <a href="https://www.facebook.com/bibliomation" target="_blank"><fa-icon [icon]="faFacebook"></fa-icon></a>
+    <a href="https://www.linkedin.com/company/bibliomation-inc" target="_blank"><fa-icon
+        [icon]="faLinkedin"></fa-icon></a>
+    <a href="https://twitter.com/bibliomation" target="_blank"><fa-icon [icon]="faTwitter"></fa-icon></a>
   </div>
 </div>
