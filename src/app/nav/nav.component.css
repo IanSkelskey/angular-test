@@ -1,5 +1,13 @@
-.sidenav-container {
-  height: 100%;
+.contact {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.contact a {
+  color: inherit;
 }
 
 .sidenav {
@@ -10,8 +18,25 @@
   background: inherit;
 }
 
+.social-media {
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
 .mat-toolbar.mat-primary {
   position: sticky;
   top: 0;
   z-index: 1;
+}
+
+mat-nav-list {
+  flex-grow: 1;
+}
+
+mat-nav-list a {
+  display: flex;
+  gap: 1em;
+  align-items: center;
 }
