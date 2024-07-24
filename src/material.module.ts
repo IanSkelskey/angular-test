@@ -1,5 +1,3 @@
-// src/app/material.module.ts
-
 import { NgModule } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -10,10 +8,6 @@ import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatSidenav, MatSidenavContainer, MatSidenavContent } from '@angular/material/sidenav';
-import { MatNavList } from '@angular/material/list';
-import { MatCardTitle, MatCardTitleGroup, MatCardLgImage, MatCardHeader } from '@angular/material/card';
-
 
 @NgModule({
   imports: [
@@ -25,15 +19,7 @@ import { MatCardTitle, MatCardTitleGroup, MatCardLgImage, MatCardHeader } from '
     MatCardModule,
     MatInputModule,
     MatListModule,
-    MatSidenavModule,
-    MatSidenav,
-    MatSidenavContainer,
-    MatSidenavContent,
-    MatNavList,
-    MatCardTitle,
-    MatCardTitleGroup,
-    MatCardLgImage,
-    MatCardHeader
+    MatSidenavModule
   ],
   exports: [
     FontAwesomeModule,
@@ -44,11 +30,7 @@ import { MatCardTitle, MatCardTitleGroup, MatCardLgImage, MatCardHeader } from '
     MatCardModule,
     MatInputModule,
     MatListModule,
-    MatSidenav,
-    MatSidenavContainer,
-    MatSidenav,
-    MatSidenavModule,
-    MatNavList
+    MatSidenavModule
   ]
 })
 export class MaterialModule { }

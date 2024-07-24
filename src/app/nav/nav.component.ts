@@ -9,13 +9,16 @@ import { faFacebook, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-
   ],
   selector: 'app-nav',
   templateUrl: './nav.component.html',
-  styleUrl: './nav.component.css',
+  styleUrls: ['./nav.component.css'],
   standalone: true,
 })
 export class NavComponent {
-  faFacebook = faFacebook;
-  faLinkedin = faLinkedin;
-  faLocationDot = faLocationDot;
-  faTwitter = faTwitter;
+  icons = {
+    faFacebook,
+    faLinkedin,
+    faLocationDot,
+    faTwitter
+  };
+
   constructor() { }
 }
